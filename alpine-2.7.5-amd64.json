@@ -3,7 +3,7 @@
     {
       "boot_command": [
          "root<enter><wait>",
-         "ifconfig eth0 10.0.2.15 netmask 255.255.255.0<enter><wait>",
+         "ifconfig eth0 up && udhcpc -i eth0<enter><wait5>",
          "wget http://{{ .HTTPIP }}:{{ .HTTPPort }}/alpine-2.7.5/answers<enter><wait>",
          "setup-alpine -f answers<enter><wait10>",
          "vagrant<enter><wait>",
@@ -18,9 +18,9 @@
       "guest_additions_mode": "disable",
       "guest_os_type": "Linux26_64",
       "http_directory": "http",
-      "iso_checksum": "87372a39ffcc7ff7868ac6b3b0ebac2fad13e192",
+      "iso_checksum": "2b326b33a0c130b9bef8c871805cd1ed258838b1",
       "iso_checksum_type": "sha1",
-      "iso_url": "{{user `mirror`}}/alpine/v2.7/releases/x86_64/alpine-2.7.5-x86_64.iso",
+      "iso_url": "http://wiki.alpinelinux.org/cgi-bin/dl.cgi/v3.0/releases/x86_64/alpine-3.0.6-x86_64.iso",
       "output_directory": "alpine-2.7.5-amd64",
       "shutdown_command": "/sbin/poweroff",
       "ssh_password": "vagrant",
@@ -28,7 +28,7 @@
       "ssh_username": "root",
       "ssh_wait_timeout": "100s",
       "type": "virtualbox-iso",
-      "headless" : true,
+      "headless" : false,
       "hard_drive_interface": "sata",
       "vboxmanage": [
         [
