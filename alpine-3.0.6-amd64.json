@@ -21,7 +21,7 @@
       "iso_checksum": "2b326b33a0c130b9bef8c871805cd1ed258838b1",
       "iso_checksum_type": "sha1",
       "iso_url": "http://wiki.alpinelinux.org/cgi-bin/dl.cgi/v3.0/releases/x86_64/alpine-3.0.6-x86_64.iso",
-      "output_directory": "alpine-2.7.5-amd64",
+      "output_directory": "alpine-3.0.6-amd64",
       "shutdown_command": "/sbin/poweroff",
       "ssh_password": "vagrant",
       "ssh_port": 22,
@@ -45,7 +45,7 @@
         ]
       ],
       "virtualbox_version_file": ".vbox_version",
-      "vm_name": "alpine-2.7.5-amd64"
+      "vm_name": "alpine-3.0.6-amd64"
     }
   ],
   "provisioners": [
@@ -64,7 +64,7 @@
   ],
   "post-processors": [
     {
-      "output": "alpine-2.7.5-amd64.box",
+      "output": "alpine-3.0.6-amd64.box",
       "type": "vagrant"
     }
   ],
