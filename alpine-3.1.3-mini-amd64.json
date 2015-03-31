@@ -18,10 +18,10 @@
       "guest_additions_mode": "disable",
       "guest_os_type": "Linux26_64",
       "http_directory": "http",
-      "iso_checksum": "af88174eccd7e79af8532c9c6d67d89826ab3083",
+      "iso_checksum": "df8bc269b76f863dd3dfda90d9eebc9aa7b5c1fd",
       "iso_checksum_type": "sha1",
-      "iso_url": "http://wiki.alpinelinux.org/cgi-bin/dl.cgi/v3.1/releases/x86_64/alpine-3.1.3-x86_64.iso",
-      "output_directory": "alpine-3.1.3-amd64",
+      "iso_url": "http://wiki.alpinelinux.org/cgi-bin/dl.cgi/v3.1/releases/x86_64/alpine-mini-3.1.3-x86_64.iso",
+      "output_directory": "alpine-mini-3.1.3-amd64",
       "shutdown_command": "/sbin/poweroff",
       "ssh_password": "vagrant",
       "ssh_port": 22,
@@ -45,7 +45,7 @@
         ]
       ],
       "virtualbox_version_file": ".vbox_version",
-      "vm_name": "alpine-3.1.3-amd64"
+      "vm_name": "alpine-mini-3.1.3-amd64"
     }
   ],
   "provisioners": [
@@ -64,7 +64,7 @@
   ],
   "post-processors": [
     {
-      "output": "alpine-3.1.3-amd64.box",
+      "output": "alpine-mini-3.1.3-amd64.box",
       "type": "vagrant",
       "keep_input_artifact": true
     }
